@@ -55,5 +55,5 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ DOCKER_IMAGE_REGISTRY }}:${{ steps.get_version.outputs.VERSION }}
-            ${{ DOCKER_IMAGE_REGISTRY }}:latest
+            ${DOCKER_IMAGE_REGISTRY}:${{ steps.get_version.outputs.VERSION }}
+            ${DOCKER_IMAGE_REGISTRY}:latest
